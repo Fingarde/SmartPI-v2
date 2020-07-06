@@ -5,10 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart PI v2</title>
     <link href="style.css" rel="stylesheet">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script type="text/javascript" src="index.js"></script>
 </head>
 <body>
+    <div class=header>
+        <div>
+            <div class="hour primary-font">
+            </div>
+            <div class="date secondary-font">
+            </div>
+        </div>
+        <div class="weather-container">
+            <div class="cropper">
+                <img class="icon" src=""/>
+            </div>
+            <div class="temp-container">
+                    <div class="temp primary-font "></div>
+                    <div class="weather secondary-font"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="calendar" class="calendar">
+
+    </div>
+
     <div id="menu" class="menu">
         <div class="menu-item menu-item-selected" style="background-color: #65b3ad;">
             <span class="img-helper"></span><img src="img/arrow.svg" height="70">
@@ -34,5 +54,10 @@
             <span class="img-helper"></span><img src="img/computer.svg" height="90">
         </div>
     </div> 
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lalezar:regular" rel="stylesheet" />
 </body>
 </html>
