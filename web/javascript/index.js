@@ -68,7 +68,7 @@ function getMeteo()
 	{
 		document.getElementsByClassName('temp')[0].innerHTML = Math.round(data.main.temp) + '°'
 		   
-		document.getElementsByClassName('icon')[0].src = 'img/meteo/' + data.weather[0].icon + '.svg'
+		document.getElementsByClassName('icon')[0].src = 'web/img/meteo/' + data.weather[0].icon + '.svg'
 
 		let description
 
