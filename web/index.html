@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart PI v2</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class=header>
+        <div>
+            <div class="hour primary-font">
+            </div>
+            <div class="date secondary-font">
+            </div>
+        </div>
+        <div class="weather-container">
+            <div class="cropper">
+                <img class="icon" src=""/>
+            </div>
+            <div class="temp-container">
+                    <div class="temp primary-font "></div>
+                    <div class="weather secondary-font"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="calendar" class="calendar">
+    </div>
+
+    <div id="menu" class="menu">
+        <div class="menu-item menu-item-selected" style="background-color: #65b3ad;">
+            <span class="img-helper"></span><img src="img/arrow.svg" height="70">
+        </div>
+        <div class="menu-spacer">
+        </div>
+        <div class="menu-item" style="background-color: black;">
+            <span class="img-helper"></span><img src="img/netflix.svg" height="80">
+        </div>
+        <div class="menu-item" style="background-color: #ff0000;">
+            <span class="img-helper"></span><img src="img/youtube.svg" height="80">
+        </div>
+        <div class="menu-item" style="background-color: #593e85;">
+            <span class="img-helper"></span><img src="img/twitch.svg" height="80">
+        </div>
+        <div class="menu-item" style="background-color: #494949;">
+            <span class="img-helper"></span><img src="img/plex.svg" height="30">
+        </div>
+        <div class="menu-item" style="background-color: #00aae1;">
+            <span class="img-helper"></span><img src="img/prime-video.svg" height="90">
+        </div>
+        <div class="menu-item" style="background-color: #76c2af;">
+            <span class="img-helper"></span><img src="img/computer.svg" height="90">
+        </div>
+        <div class="menu-spacer">
+        </div>
+        <div class="menu-item" style="background-color: wheat;">
+            <span class="img-helper"></span><img src="img/shutdown.svg" height="80">
+        </div>
+    </div> 
+
+    <script type="text/javascript" src="javascript/lib/jquery.js"></script>
+    <script type="text/javascript" src="javascript/jquery.bgswitcher.js"></script>
+    <script type="text/javascript" src="javascript/socket.io.js"></script>
+    <script type="text/javascript" src="javascript/index.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lalezar:regular" rel="stylesheet" />
+</body>
+</html>
