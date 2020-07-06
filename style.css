@@ -4,10 +4,12 @@
 }
 
 body {
-    background-image: url("https://trello-backgrounds.s3.amazonaws.com/SharedBackground/1280x1920/006e52f6382e3f152707115a1347dd85/photo-1593119418859-f33833631ff7.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat; 
     background-size: cover;
+
+    height: 100%;
+    width: 100%;
 }
 
 

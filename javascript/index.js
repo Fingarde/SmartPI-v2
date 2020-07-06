@@ -103,10 +103,12 @@ function getMeteo()
 	})
 }
 
-let cours = [{"nom": "Bases de la Programmation orientée objets", "salle": "B23", "horaire": ["08:00", "10:00"]},
-{"nom": "Graphes et Langages", "salle": "B14", "horaire": ["10:00", "12:00"]},
-{"nom": "Graphes et Langages", "salle": "A12", "horaire": ["13:30", "15:30"]},
-{"nom": "Bases de la Programmation orientée objets", "salle": "A18", "horaire": ["15:30", "17:30"]}]
+let cours = [
+    {"nom": "Bases de la Programmation orientée objets", "salle": "B23", "horaire": ["08:00", "10:00"]},
+    {"nom": "Graphes et Langages", "salle": "B14", "horaire": ["10:00", "12:00"]},
+    {"nom": "Graphes et Langages", "salle": "A12", "horaire": ["13:30", "15:30"]},
+    {"nom": "Bases de la Programmation orientée objets", "salle": "A18", "horaire": ["15:30", "17:30"]}
+]
 
 function calendar() {
     let calendar = document.getElementById("calendar")
@@ -144,10 +146,31 @@ function calendar() {
    
 }
 
+let bgs = [
+    "https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2400x1600/8c69b0074168eb4eed9d7c72890e9bd7/photo-1591972578732-fc089819c722.jpg",
+    "https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2405x1600/86075e5d12e96b8e6431dfc217d94acd/photo-1592010554720-51a950bda4cb.jpg",
+    "https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2405x1600/4997c0c2151c29f5ea3579413c49f08a/photo-1591167844762-3c3456a61d8d.jpg",
+    "https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2398x1600/2902177bdf4aee3234027c5eb0695aa8/photo-1593223772770-1841a123740a.jpg",
+    "https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2400x1600/33ba9f40bff6c6995979ff288e1db798/photo-1592436078279-b5971be2d8fc.jpg",
+    "https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2407x1600/8199131a338ef2c079c449428092ad31/photo-1563364664-399838d1394c.jpg"
+]
+
+function wallpaper() {
+    $('body').bgswitcher({
+        images: bgs,
+        effect: "fade",
+        interval: 5000
+
+});
+    //document.body.style.background = `url("${bgs[Math.floor( Math.random() * bgs.length)]}")`
+}
+
+wallpaper()
 calendar()
 getMeteo()
 clock()
 
+setInterval(wallpaper, 1000)
 setInterval(hideMenu, 1000)
-setInterval(getMeteo, 5 * 60 * 1000)
+setInterval(getMeteo, 5 * 60 * 1000) // every 5min
 setInterval(clock, 500);
