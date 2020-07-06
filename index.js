@@ -19,10 +19,6 @@ $(window).keydown( (key) =>
 
     show = 3;
 
-  
-
-
-
     menu[index].classList.remove('menu-item-selected')
     if(key.which == 39)
     {
