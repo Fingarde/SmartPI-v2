@@ -67,7 +67,6 @@ function getMeteo()
 	$.get('https://api.openweathermap.org/data/2.5/weather?q=Aubi%C3%A8re,fr&appid=c21a75b667d6f7abb81f118dcf8d4611&units=metric', (data) => 
 	{
 		document.getElementsByClassName('temp')[0].innerHTML = Math.round(data.main.temp) + '°'
-		   
 		document.getElementsByClassName('icon')[0].src = 'web/img/meteo/' + data.weather[0].icon + '.svg'
 
 		let description
